@@ -4,27 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business-promotion</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
-        <a href="">Product</a>
-        <ul>
-          <li><a href="">Product</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="">Resources</a></li>
+    <header class="container header-box">
+      <nav class="nav-box">
+        <div class="logo-box">
+          <a class="logo-link" href="./index.html">
+            <img class="logo-img" src="./images/logo.png" alt="logo" />
+            Product</a
+          >
+        </div>
+        <button class="btn-mob-menu" type="button">
+          <svg class="" width="28" height="31">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href=""
+              ><span class="text-semibold">Product</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./customers.html">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Resources</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
+      <ul class="button-list">
+        <li class="button-item">
+          <button class="btn-header btn-transparent" type="button">
+            Sign In
+          </button>
+        </li>
+        <li class="button-item">
+          <button class="btn-header" type="button">Sign Up</button>
+        </li>
       </ul>
     </header>
     <main>
       <!-- hero -->
-      <section>
+      <section class="container">
         <h1>Work at the speed of thought</h1>
         <p>
           Tools, tutorials, design and innovation experts, all in one place! The
@@ -42,7 +84,7 @@
         />
       </section>
       <!-- Product -->
-      <section>
+      <section class="container">
         <h2>Product was Built Specifically for You</h2>
         <ul>
           <li>
@@ -65,7 +107,7 @@
         <button type="button">SIGN UP NOW</button>
       </section>
       <!-- Management -->
-      <section>
+      <section class="container">
         <h2>Effortless Validation for Management</h2>
         <p>
           The Myspace page defines the individual, his or her characteristics,
@@ -95,7 +137,7 @@
         />
       </section>
       <!-- Customers -->
-      <section>
+      <section class="container">
         <img
           src="./images/support-img-min.png"
           alt="support"
@@ -122,7 +164,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="container">
         <h2>Optimisation for Collaborative</h2>
         <p>
           Few would argue that, despite the advancements of feminism over the
@@ -153,7 +195,7 @@
         />
       </section>
     </main>
-    <footer>
+    <footer class="container">
       <a href="">Product</a>
       <b>Resource</b>
       <ul>
